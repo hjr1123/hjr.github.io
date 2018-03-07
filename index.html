@@ -14,7 +14,10 @@
         }
         li {
             list-style-type:none;
-            line-height: 40px;
+            line-height: 50px;
+        }
+        #back_top_li {
+            display: none;
         }
     </style>
     <script>
@@ -22,9 +25,9 @@
 
         function scrollFunction() {console.log(121);
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("back_top").style.display = "block";
+                document.getElementById("back_top_li").style.display = "block";
             } else {
-                document.getElementById("back_top").style.display = "none";
+                document.getElementById("back_top_li").style.display = "none";
             }
         }
 
@@ -41,7 +44,7 @@
     </center>
 	<div style="position: fixed;bottom: 100px;right: 360px;font-size: 20px;font-weight: bold">
 		<ul>
-            <li><a id="back_top" title="返回顶部" href="javascript:topFunction(0)"><img src="http://hjr-1251278568.cosgz.myqcloud.com/top.png" width="40"></a></li>
+            <li id="back_top_li"><a id="back_top" title="返回顶部" href="javascript:topFunction(0)"><img src="http://hjr-1251278568.cosgz.myqcloud.com/top.png" width="40"></a></li>
             <li><a title="详细下载" href="http://hjr-1251278568.cosgz.myqcloud.com/%E7%AE%80%E5%8E%86%E4%BD%9C%E5%93%81.rar"><img src="http://hjr-1251278568.cosgz.myqcloud.com/download.png" width="40"></a></li>
         </ul>
 	</div>
